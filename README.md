@@ -1,2 +1,1 @@
-# PVESPS
-Solar-data-platform
+# PVESPS — Photovoltaic Energy & Site Planning System
