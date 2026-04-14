@@ -1,44 +1,20 @@
 # PVESPS｜太陽光電發電預測與效能分析系統
 
+## 專案大綱：
+A solar energy data platform that integrates weather data
+to estimate power generation and support operational decisions.
+
 > 一個以 **站點級每日發電量預測** 為核心的端到端資料與機器學習作品集專案。  
 > 從資料擷取、資料集市建模、訓練資料集建置、模型訓練、批次推論，到預測監控儀表板，完整展示 ML 如何落地到實務型資料產品流程中。
 
 ---
+## 商業問題 與 解決方案：
+Solar power generation is highly affected by weather,
+but data is often fragmented and not integrated.
 
-## 專案亮點
-
-- 建立 **太陽光電每日發電量預測** 的完整資料與 ML workflow
-- 以 **site × day** 為粒度設計 training dataset
-- 使用 **time-based split** 比較 baseline 模型
-- 完成 **batch scoring 落庫**
-- 建立 **prediction monitoring dashboard**
-- 專案重點不只在模型訓練，而在於 **資料 → 模型 → 推論 → 展示** 的完整串接
-
----
-
-## 專案目標
-
-PVESPS 的目標，是建立一套可被展示、可被驗證、也可被延伸的太陽能發電預測流程，回答三個核心問題：
-
-1. 如何把天氣與日照資料整理成模型可用的訓練資料？
-2. 監督式學習模型能否優於簡單的 naive baseline？
-3. 模型輸出如何被保存、監控，並轉成可支援決策的資訊？
-
----
-
-## 專案定位
-
-這不是單純的 Kaggle notebook 專案，也不是只展示單一模型分數的實驗。
-
-PVESPS 更接近一個 **產品導向的 ML pipeline 作品集**，重點放在：
-
-- 資料流程與 ETL 設計
-- mart / feature layer 建置
-- time-based model evaluation
-- scoring result persistence
-- prediction dashboard 與 monitoring 視角
-
----
+Solution:
+This project builds a data pipeline to integrate weather data,
+estimate generation, and provide insights via dashboard.
 
 ## 架構總覽
 
@@ -93,6 +69,57 @@ Prediction Layer
 Dashboard Layer
   └─ prediction dashboard
 ```
+
+## 專案模組說明
+Data Pipeline
+- Weather API ingestion
+- ETL processing
+- Data validation
+
+Data Warehouse
+- Raw / Staging / Mart design
+- Partition strategy
+
+Analytics
+- Generation estimation model
+- KPI dashboard
+
+## 專案亮點
+
+- 建立 **太陽光電每日發電量預測** 的完整資料與 ML workflow
+- 以 **site × day** 為粒度設計 training dataset
+- 使用 **time-based split** 比較 baseline 模型
+- 完成 **batch scoring 落庫**
+- 建立 **prediction monitoring dashboard**
+- 專案重點不只在模型訓練，而在於 **資料 → 模型 → 推論 → 展示** 的完整串接
+
+---
+
+## 專案目標
+
+PVESPS 的目標，是建立一套可被展示、可被驗證、也可被延伸的太陽能發電預測流程，回答三個核心問題：
+
+1. 如何把天氣與日照資料整理成模型可用的訓練資料？
+2. 監督式學習模型能否優於簡單的 naive baseline？
+3. 模型輸出如何被保存、監控，並轉成可支援決策的資訊？
+
+---
+
+## 專案定位
+
+這不是單純的 Kaggle notebook 專案，也不是只展示單一模型分數的實驗。
+
+PVESPS 更接近一個 **產品導向的 ML pipeline 作品集**，重點放在：
+
+- 資料流程與 ETL 設計
+- mart / feature layer 建置
+- time-based model evaluation
+- scoring result persistence
+- prediction dashboard 與 monitoring 視角
+
+---
+
+
 
 ---
 
