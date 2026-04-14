@@ -9,11 +9,11 @@
 > 從資料擷取、資料集市建模、訓練資料集建置、模型訓練、批次推論，到預測監控儀表板，完整展示 ML 如何落地到實務型資料產品流程中。
 
 ---
-## 商業問題 與 解決方案：
+## 商業問題：
 Solar power generation is highly affected by weather,
 but data is often fragmented and not integrated.
 
-Solution:
+## 解決方案：
 This project builds a data pipeline to integrate weather data,
 estimate generation, and provide insights via dashboard.
 
