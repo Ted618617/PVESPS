@@ -1,8 +1,9 @@
 # PVESPS｜太陽光電發電預測與效能分析系統
 
 ## 專案大綱：
-A solar energy data platform that integrates weather data
-to estimate power generation and support operational decisions.
+
+> A solar energy data platform that integrates weather data
+> to estimate power generation and support operational decisions.
 
 > 一個以 **站點級每日發電量預測** 為核心的端到端資料與機器學習作品集專案。  
 > 從資料擷取、資料集市建模、訓練資料集建置、模型訓練、批次推論，到預測監控儀表板，完整展示 ML 如何落地到實務型資料產品流程中。
@@ -22,11 +23,6 @@ estimate generation, and provide insights via dashboard.
 
 ![PVESPS Architecture](./assets/pvesps_architecture.png)
 
-### High-level Data Flow
-
-```text
-Raw Layer
-...
 ### High-level Data Flow
 
 ```text
