@@ -3,6 +3,11 @@
 > 一個以 **站點級每日發電量預測** 為核心的端到端資料與機器學習作品集專案。  
 > 重點不只在模型訓練，而在於完整打通 **資料平台 → 訓練資料 → 模型評估 → 批次推論 → 預測監控**。
 
+
+## 架構總覽
+
+下圖展示 PVESPS 從原始資料、mart 建模、ML preparation、模型訓練、批次推論到監控儀表板的完整流程：
+
 ![PVESPS Architecture](./assets/pvesps_architecture.png)
 
 ## 專案亮點
@@ -27,8 +32,13 @@
 👉 最終目標：讓資料能支援「發電預估與營運決策」
 
 ---
+## 商業問題
+太陽能發電量高度受天氣與日照條件影響，但實務上資料常分散於不同來源，難以整合成可直接支援預測與營運決策的資料流程。
 
-## 💡 解決的問題
+## 解決方案
+
+
+## 💡 解決方案
 
 光電發電高度依賴天氣，但實務上：
 
@@ -36,21 +46,30 @@
 - 難以即時整合
 - 無法直接用於預測與分析
 
-👉 本專案建立一條完整 Data Pipeline  
-讓資料從「原始 → 分析 → 預測 → 視覺化」
+👉 本專案建立一套從原始資料擷取、資料建模、機器學習訓練、批次推論到預測監控儀表板的完整流程，將太陽光電資料平台延伸為可支援預測與決策的資料產品。
 
 ---
 
 ## 🧠 這個專案展示了什麼能力？
 
-- ✔ ETL Pipeline 設計（API → DB）
-- ✔ Data Warehouse（Raw / Staging / Mart）
-- ✔ 資料品質控管（Data Validation / Quarantine）
-- ✔ Feature Engineering（時間序列 / lag）
-- ✔ 模型訓練與評估（MAE / RMSE / MAPE）
-- ✔ 批次預測（Batch Scoring）
-- ✔ Dashboard（營運監控）
 
+## 這個專案展示的能力
+
+### 資料工程
+- ETL workflow 設計
+- mart 導向 fact / dimension modeling
+- 資料品質檢查與 run logging
+
+### 機器學習
+- 訓練資料集建置
+- 特徵工程
+- time-based model evaluation
+- baseline model comparison
+
+### 產品 / 決策層
+- batch scoring 結果落庫
+- prediction monitoring dashboard
+- site-level error ranking 與 drill-down
 ---
 
 ## 🏗 高層架構（High-level Architecture）
@@ -315,7 +334,7 @@ Prediction Layer
 
 Dashboard Layer
   └─ prediction dashboard
-```
+```4
 
 ## 專案模組說明
 Data Pipeline
