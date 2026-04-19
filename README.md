@@ -1,7 +1,16 @@
-# ☀️ PVESPS｜光電資料整合與發電預測平台
+# PVESPS｜太陽光電發電預測與效能分析系統
 
-> A product-oriented data platform that integrates weather data  
-> to estimate solar power generation and support operational decisions.
+> 一個以 **站點級每日發電量預測** 為核心的端到端資料與機器學習作品集專案。  
+> 重點不只在模型訓練，而在於完整打通 **資料平台 → 訓練資料 → 模型評估 → 批次推論 → 預測監控**。
+
+![PVESPS Architecture](./assets/pvesps_architecture.png)
+
+## 專案亮點
+- 建立太陽光電每日發電量預測的完整資料與 ML workflow
+- 以 **site × day** 粒度建置 training dataset
+- 使用 **time-based split** 比較 baseline 模型
+- 完成 **batch scoring 落庫**
+- 建立 **prediction monitoring dashboard**
 
 ---
 
