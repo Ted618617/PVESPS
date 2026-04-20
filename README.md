@@ -368,6 +368,7 @@ batch scoring pipeline
  - 延伸 maintenance recommendation layer
 
 ### 專案結構
+```text
 PVESPS_光電產業專案/
 ├─ Step_05_白天降雨風險視覺化/
 ├─ Step_06_建立ML訓練資料集/
@@ -388,6 +389,7 @@ PVESPS_光電產業專案/
 │  └─ app_prediction_dashboard_v1_1.py
 ├─ README.md
 └─ README_CHT.md
+```
 
 ## 執行方式
 
