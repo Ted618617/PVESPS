@@ -116,7 +116,7 @@ Raw Layer
   ├─ sunshine_daily
   └─ site_reports
 
-↓ ETL / cleansing / DQ
+      ↓ ETL / cleansing / DQ
 
 Mart Layer
   ├─ dim_solar_site
@@ -126,26 +126,26 @@ Mart Layer
   ├─ fact_weather_forecast
   └─ fact_site_performance
 
-↓ Step_06 ML preparation
+      ↓ Step_06 ML preparation
 
 ML Layer
   ├─ fact_generation_actual_daily
   └─ ml_training_generation_daily
 
-↓ Step_07 model training
+      ↓ Step_07 model training
 
 Model Layer
   ├─ naive lag-1 baseline
   ├─ linear regression
   └─ random forest
 
-↓ Step_08 batch scoring
+      ↓ Step_08 batch scoring
 
 Prediction Layer
   ├─ fact_generation_prediction_daily
   └─ model_scoring_run_log
 
-↓ Step_09 monitoring
+      ↓ Step_09 monitoring
 
 Dashboard Layer
   └─ prediction dashboard
