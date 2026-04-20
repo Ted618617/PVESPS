@@ -359,7 +359,7 @@ batch scoring pipeline
  - 根據實際 coverage 進行 feature pruning
  - 模型超參數調校
  - 版本化模型比較
-ㄒinterval prediction 優化
+ - interval prediction 優化
 
 ### 產品面
  - 實作 day-ahead scoring mode
