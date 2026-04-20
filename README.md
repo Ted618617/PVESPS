@@ -231,21 +231,12 @@ Step_07 用於驗證 training dataset 是否足以支撐有意義的每日發電
  - MAPE
 
 ### Step_07 結果
+```text
 ### 模型	Valid MAE	Valid RMSE	Valid MAPE	Test MAE	Test RMSE	Test MAPE
 Random Forest	35.5778	66.0636	1.9315	109.1443	194.9187	4.8945
 Linear Regression	44.3132	56.5661	3.4323	63.7382	84.5206	4.4156
 Naive lag-1	138.1998	180.9771	8.7417	227.5230	323.7055	11.0914
-
-
-
-
-
-
-
-
-
-
-
+```
 
 ### 結果重點
  - 兩個監督式模型都明顯優於 naive baseline
