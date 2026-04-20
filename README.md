@@ -394,17 +394,25 @@ PVESPS_光電產業專案/
 ## 執行方式
 
 ### Step_06｜建立 ML label 與 training dataset
+```bash
 python Step_06_建立ML訓練資料集\build_actual_generation_daily.py
 python Step_06_建立ML訓練資料集\build_training_dataset.py
+```
 
 ### Step_07｜訓練 baseline 模型
+```bash
 python Step_07_訓練基準模型與樹模型\train_baseline_model.py
+```
 
 ### Step_08｜執行 batch scoring
+```bash
 python Step_08_批次推論與結果落庫\score_generation_prediction.py
+```
 
 ### Step_09｜啟動 prediction dashboard
+```bash
 python -m streamlit run ".\Step_09_Prediction_Dashboard與模型監控\app_prediction_dashboard_v1_1.py"
+```
 
 ## 最終總結
 
