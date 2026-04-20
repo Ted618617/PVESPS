@@ -141,6 +141,7 @@ Prediction Layer
 
 Dashboard Layer
   └─ prediction dashboard
+```
 
 ## 核心資料模型
 ### Mart / 營運分析層
