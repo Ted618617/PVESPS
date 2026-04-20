@@ -205,6 +205,7 @@ Step_06 是本專案從「資料分析導向」正式走向「機器學習導向
  - lag_7_avg_generation_kwh
  - lag_14_avg_generation_kwh
 
+
 ## Step_07｜Baseline 模型訓練
 Step_07 用於驗證 training dataset 是否足以支撐有意義的每日發電量回歸模型。
 
