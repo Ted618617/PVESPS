@@ -353,7 +353,7 @@ batch scoring pipeline
  - 以真實發電量取代 simulated labels
  - 將 weather forecast 聚合成每日 ML features
  - 補強 radiation coverage
-引入更多營運訊號（維護 / 故障 / 清潔度）
+ - 引入更多營運訊號（維護 / 故障 / 清潔度）
 
 ### 模型面
  - 根據實際 coverage 進行 feature pruning
